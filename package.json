@@ -1,20 +1,22 @@
 {
   "name": "bulmatic",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "dependencies": {
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2"
   },
   "scripts": {
-    "git-commit": "git add -A && git commit -m '-' && git push",
-    "goto-github": "open https://github.com/meg768/bulmatic",
-    "goto-npm": "open https://www.npmjs.com/package/bulmatic",
-    "npm-publish": "npm run transpile && npm run styleguide-publish && npm run npm-increase-version && npm run git-commit && npm publish",
-    "npm-increase-version": "npm version patch --no-git-tag-version",
-    "styleguide-server": "npx styleguidist server",
-    "styleguide-publish": "npm run styleguide-build && gh-pages -d styleguide",
-    "styleguide-build": "npx styleguidist build"
+    "git-commit": "make git-commit",
+    "git-reset": "make git-reset",
+    "git-open": "make git-open",
+    "git-pull": "make git-pull",
+    "npm-publish": "make npm-publish",
+    "npm-increase-version": "make npm-increase-version",
+    "npm-open": "make npm-open",
+    "server": "npx styleguidist server",
+    "publish": "npm run build && gh-pages -d styleguide",
+    "build": "npx styleguidist build"
   },
   "eslintConfig": {
     "extends": [
