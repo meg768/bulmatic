@@ -1,10 +1,19 @@
-import React from 'react';
-import Tag from '../tag';
+import {React, renderElement} from '../../utils.js';
 
 var Hero = React.forwardRef((props, ref)  => {
-	return (
-		<Tag tag='div' baseClassName='hero' ref={ref} {...props}/>
-	);
+	return renderElement({element:'section', base:'hero', ...props}, ref);
+});
+
+Hero.Head = React.forwardRef((props, ref)  => {
+	return renderElement({element:'div', base:'hero-head', ...props}, ref);
+});
+
+Hero.Foot = React.forwardRef((props, ref)  => {
+	return renderElement({element:'div', base:'hero-foot', ...props}, ref);
+});
+
+Hero.Body = React.forwardRef((props, ref)  => {
+	return renderElement({element:'div', base:'hero-body', ...props}, ref);
 });
 
 export default Hero;

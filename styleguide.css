@@ -2,15 +2,47 @@
 /*
 @import "./fontawesome.css";
 */
-/*
-@import "https://kit.fontawesome.com/4419c42244.css";
-*/
-/*
-@import "https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma-rtl.min.css"; 
-*/
 
+@import "https://kit.fontawesome.com/4419c42244.css";
+
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma-rtl.min.css"; 
+
+/*
 @import "https://unpkg.com/bulmaswatch/default/bulmaswatch.min.css";
+*/
 
 /*
 @import "https://unpkg.com/bulmaswatch/flatly/bulmaswatch.min.css";
 */
+
+
+.has-border-radius-0 {
+	border-radius: 0;
+}
+
+.has-border-radius-1 {
+	border-radius: 0.25em;
+}
+
+.has-border-radius-2 {
+	border-radius: 0.5em;
+}
+
+.has-border-radius-3 {
+	border-radius: 0.75em;
+}
+
+
+
+[class^="rsg--root-"] .token.tag {
+	padding-left: 0;
+	padding-right: 0;
+	margin-right: 0.25em;
+	height: 1em;
+	background-color: transparent;
+}
+
+[class^="rsg--tab-"] .token.plain-text {
+	tab-size: 2em;
+}
+

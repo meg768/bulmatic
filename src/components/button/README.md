@@ -1,6 +1,6 @@
 #### Normal buttons
 
-```js
+```js 
 
 import { Container, Buttons, Button } from "bulmatic";
 
@@ -18,8 +18,8 @@ import { Container, Buttons, Button } from "bulmatic";
 
 #### Outlined buttons
 
-```js
 
+```js 
 import { Container, Buttons, Button } from "bulmatic";
 
 <Container>
@@ -31,8 +31,22 @@ import { Container, Buttons, Button } from "bulmatic";
 		<Button is="disabled outlined">Disabled</Button>
 	</Buttons>
 </Container>
-
 ```
+
+```js
+import { Container, Buttons, Button } from "bulmatic";
+
+<Container>
+	<Buttons>
+		<Button is="primary outlined">Primary</Button>
+		<Button is="success outlined">Success</Button>
+		<Button is="warning outlined">Warning</Button>
+		<Button is="danger outlined">Danger</Button>
+		<Button is="disabled outlined">Disabled</Button>
+	</Buttons>
+</Container>
+```
+
 #### Rounded buttons
 
 ```js

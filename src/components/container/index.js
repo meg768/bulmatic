@@ -1,11 +1,5 @@
-import React from 'react';
-import Tag from '../tag';
+import {React, renderElement} from '../../utils.js';
 
-var Container = React.forwardRef((props, ref)  => {
-	return (
-		<Tag tag='div' baseClassName='container' ref={ref} {...props}/>
-	);
+export default React.forwardRef((props, ref)  => {
+	return renderElement({element:'div', base:'container', ...props}, ref);
 });
-
-export default Container;
-

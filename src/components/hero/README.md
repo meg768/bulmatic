@@ -1,23 +1,23 @@
-
-### Usage 
-
-```js static
-import {Hero} from 'bulmatic';
-```
-
-#### Normal
+#### Example
 
 ```js
 
-import {Buttons} from 'bulmatic';
+import {Container, Hero, Title, Subtitle, Button, Column, Columns} from 'bulmatic';
 
-<div>
-	<p>
-	askjdaksdjfkjah
-	</p>
-	<Hero>
+<Container>
+	<Hero is="primary small rounded">
+		<Hero.Body>
+			<Container >
+				<Title>
+					Hero title
+				</Title>
+				<Subtitle>
+					Hero subtitle
+				</Subtitle>
+			</Container>
+		</Hero.Body>
 	</Hero>
-</div>
+</Container>
 ```
 
 

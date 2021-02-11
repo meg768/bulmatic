@@ -1,10 +1,5 @@
-import React from 'react';
-import Tag from '../tag';
+import {React, renderElement} from '../../utils.js';
 
-var Column = React.forwardRef((props, ref)  => {
-	return (
-		<Tag tag='div' baseClassName='column' ref={ref} {...props}/>
-	);
+export default React.forwardRef((props, ref)  => {
+	return renderElement({element:'div', base:'column', ...props}, ref);
 });
-
-export default Column;

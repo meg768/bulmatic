@@ -1,11 +1,6 @@
-import React from 'react';
-import Tag from '../tag';
+import {React, renderElement} from '../../utils.js';
 
-var Buttons = React.forwardRef((props, ref)  => {
-	return (
-		<Tag baseClassName='buttons' ref={ref} {...props}/>
-	);
+export default React.forwardRef((props, ref)  => {
+	return renderElement({element:'div', base:'buttons', ...props}, ref);
 });
-
-export default Buttons;
 
