@@ -5,33 +5,55 @@
 
 @import "https://kit.fontawesome.com/4419c42244.css";
 
+
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma-rtl.min.css"; 
 
-/*
+
 @import "https://unpkg.com/bulmaswatch/default/bulmaswatch.min.css";
-*/
 
 /*
 @import "https://unpkg.com/bulmaswatch/flatly/bulmaswatch.min.css";
 */
-
 
 .has-border-radius-0 {
 	border-radius: 0;
 }
 
 .has-border-radius-1 {
-	border-radius: 0.25em;
+	border-radius: 0.25rem;
 }
 
 .has-border-radius-2 {
-	border-radius: 0.5em;
+	border-radius: 0.5rem;
 }
 
 .has-border-radius-3 {
-	border-radius: 0.75em;
+	border-radius: 0.75rem;
 }
 
+.has-border-radius-4 {
+	border-radius: 1rem;
+}
+
+.has-border-radius-5 {
+	border-radius: 1.5rem;
+}
+
+.has-border-radius-6 {
+	border-radius: 3rem;
+}
+
+.has-padding-left-0 {
+	padding-left: 0;
+}
+
+.has-padding-left-1 {
+	padding-left: 0.25rem;
+}
+
+.has-padding-left-2 {
+	padding-left: 0.25rem;
+}
 
 
 [class^="rsg--root-"] .token.tag {

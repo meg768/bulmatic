@@ -3,6 +3,7 @@ import classNames from 'classnames';
 
 
 
+
 function isType(obj, type) {
 	return Object.prototype.toString.call(obj) === '[object ' + type + ']';
 };
@@ -49,12 +50,11 @@ function isFloat(n) {
 function translateProps(props) {
 
     var {className = '', ...props} = props;
-	var {raw = '', is = '', has = '', are = '', base = '', baseClassName = '', padding, margin, ...props} = props;
+	var {raw = '', is = '', has = '', are = '', base = '', padding, margin, ...props} = props;
 	
 	
     function addClass(name, condition) {
         if (condition) {
-			console.log('adding class', name);
             className = classNames(className, name);
         }
     }
@@ -88,6 +88,7 @@ function translateProps(props) {
 	if (padding !== undefined) {
 		var paddings = {};
 
+		console.log(padding);
 		if (isString(padding)) {
 			padding = padding.trim().replace(/\s\s+/g, ' ');
 
@@ -148,7 +149,7 @@ function translateProps(props) {
 			margin = margin.trim().replace(/\s\s+/g, ' ');
 
 			if (margin.match(/^[0-9]+$/gi)) {
-				margins.p = margin;
+				margins.m = margin;
 			}
 			else {
 				let items = margin.split(' ');
@@ -183,6 +184,7 @@ function translateProps(props) {
 			margins.my = margin.y;	
 		}
 
+		console.log(margins);
 		addClasses('m',  margins.m);
 		addClasses('mb', margins.mb);
 		addClasses('ml', margins.ml);
@@ -220,7 +222,6 @@ function translateProps(props) {
 	///////////////////////////////////////////////////////////////////////
 
 	className = classNames(className, base);
-	className = classNames(className, baseClassName);
 	className = classNames(className, raw);
 
     return {className:classNames(className), ...props};

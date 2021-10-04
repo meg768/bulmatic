@@ -10,7 +10,7 @@ import { Container, Buttons, Button } from "bulmatic";
 		<Button is="success">Success</Button>
 		<Button is="warning">Warning</Button>
 		<Button is="danger">Danger</Button>
-		<Button is="disabled">Disabled</Button>
+		<Button is="disxabled">Disabled</Button>
 	</Buttons>
 </Container>
 
@@ -33,19 +33,6 @@ import { Container, Buttons, Button } from "bulmatic";
 </Container>
 ```
 
-```js
-import { Container, Buttons, Button } from "bulmatic";
-
-<Container>
-	<Buttons>
-		<Button is="primary outlined">Primary</Button>
-		<Button is="success outlined">Success</Button>
-		<Button is="warning outlined">Warning</Button>
-		<Button is="danger outlined">Danger</Button>
-		<Button is="disabled outlined">Disabled</Button>
-	</Buttons>
-</Container>
-```
 
 #### Rounded buttons
 

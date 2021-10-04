@@ -5,10 +5,10 @@
 
 import {Tag, Button, Container, Column, Columns} from 'bulmatic';
 
-var margin = "5";
-var padding = "5";
+var margin = "3";
+var padding = "left-4 right-4";
 
-<Container raw="m-3">
+<Container>
   <Columns is="vcentered">
 	<Column has="background-primary text-light border-radius-1" margin={margin} padding={padding}>First column</Column>
 	<Column has="background-primary text-light border-radius-2" margin={margin} padding={padding}>Second column</Column>

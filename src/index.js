@@ -11,9 +11,10 @@ import Subtitle from './components/subtitle';
 import Box from './components/box';
 import Block from './components/block';
 import Content from './components/content';
+import Element from './components/element';
 
 export {
 	Tag, Tags, Button, Buttons, Hero, Container, Column, Columns,
 	Title, Subtitle,
-	Box, Block, Content
+	Box, Block, Content, Element
 };
